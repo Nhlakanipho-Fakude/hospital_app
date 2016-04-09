@@ -1,0 +1,226 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.Alot.reminder.HomeScreen" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#931d4a" >
+
+        <TextView
+            android:id="@+id/wapsite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/hospitalCare"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#ffffff"
+            android:textStyle="bold|normal" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fcf9f4" >
+
+        <ImageView
+            android:id="@+id/pills"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="40dp"
+            android:contentDescription="@null"
+            android:src="@drawable/pills" />
+
+        <TextView
+            android:id="@+id/forgot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/pills"
+            android:layout_alignRight="@+id/pills"
+            android:layout_below="@+id/pills"
+            android:paddingLeft="10sp"
+            android:text="@string/pills"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/forgot"
+            android:layout_alignBottom="@+id/forgot"
+            android:layout_alignLeft="@+id/hospital"
+            android:layout_alignRight="@+id/hospital"
+            android:text="@string/hospital"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#000000" />
+
+        <ImageView
+            android:id="@+id/hospital"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignTop="@+id/pills"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@null"
+            android:src="@drawable/location" />
+
+        <ImageView
+            android:id="@+id/appointment"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/hospital"
+            android:layout_marginRight="27dp"
+            android:contentDescription="@null"
+            android:src="@drawable/appoinment" />
+
+        <ImageView
+            android:id="@+id/alarm"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignLeft="@+id/forgot"
+            android:layout_centerVertical="true"
+            android:contentDescription="@null"
+            android:src="@drawable/alarm" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/alarm"
+            android:layout_alignRight="@+id/alarm"
+            android:layout_below="@+id/alarm"
+            android:paddingLeft="10sp"
+            android:text="@string/alarm"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#000000" />
+
+        <ImageView
+            android:id="@+id/profile"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@null"
+            android:src="@drawable/profile" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/profile"
+            android:layout_alignRight="@+id/profile"
+            android:layout_below="@+id/profile"
+            android:paddingLeft="10sp"
+            android:text="@string/profile"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#000000" />
+
+        <ImageView
+            android:id="@+id/about"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_above="@+id/textView6"
+            android:layout_alignLeft="@+id/appointment"
+            android:contentDescription="@null"
+            android:src="@drawable/about"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView4"
+            android:layout_below="@+id/about"
+            android:paddingLeft="10sp"
+            android:text="@string/about"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/medical_centre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/exit"
+            android:layout_below="@+id/exit"
+            android:paddingLeft="10sp"
+            android:text="@string/exit"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#000000" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:background="#006666" >
+
+            <TextView
+                android:id="@+id/text_location"
+                android:layout_width="wrap_content"
+                android:layout_height="33dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/number"
+                android:text="@string/days"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#fed42a"
+                android:textStyle="bold|normal" />
+
+            <TextView
+                android:id="@+id/number"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/circle"
+                android:padding="20sp"
+                android:src="@drawable/circle"
+                android:text="@string/number"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#ffffff"
+                android:textStyle="bold|normal" />
+
+            <TextView
+                android:id="@+id/message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/number"
+                android:layout_alignLeft="@+id/text_location"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/text_location"
+                android:text="@string/message"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/exit"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignLeft="@+id/textView5"
+            android:layout_below="@+id/textView5"
+            android:contentDescription="@null"
+            android:src="@drawable/exit" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/time"
+            android:layout_alignBottom="@+id/time"
+            android:layout_alignParentRight="true"
+            android:text="@string/appoint"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#000000" />
+    </RelativeLayout>
+
+</LinearLayout>

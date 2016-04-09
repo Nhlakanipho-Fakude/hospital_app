@@ -1,0 +1,107 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_back"
+    android:orientation="vertical"
+    tools:context="com.Alot.reminder.LogInScreen" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#931d4a" >
+
+        <TextView
+            android:id="@+id/wapsite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/hospitalCare"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#ffffff"
+            android:textStyle="bold|normal" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/wapsite"
+            android:contentDescription="@null"
+            android:src="@drawable/hiv_icon" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/forgot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/pills"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/pills"
+            android:text="@string/forgot"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ff0000" />
+
+        <Button
+            android:id="@+id/pills"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/forgot"
+            android:layout_alignLeft="@+id/surname"
+            android:layout_alignRight="@+id/surname"
+            android:background="@drawable/button"
+            android:text="@string/Register"
+            android:textColor="#ffffff"
+            android:textStyle="bold|normal" />
+
+        <Button
+            android:id="@+id/Searching"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/pills"
+            android:layout_alignLeft="@+id/pills"
+            android:layout_alignRight="@+id/pills"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/button"
+            android:text="@string/logIn"
+            android:textColor="#ffffff"
+            android:textStyle="bold|normal" />
+
+        <EditText
+            android:id="@+id/surname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/searchBox"
+            android:layout_marginTop="44dp"
+            android:background="@drawable/password"
+            android:ems="10"
+            android:hint="@string/password"
+            android:inputType="textPassword|textPersonName"
+            android:paddingLeft="90sp" >
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/searchBox"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="44dp"
+            android:background="@drawable/username"
+            android:ems="10"
+            android:hint="@string/username"
+            android:inputType="textPersonName"
+            android:paddingLeft="90sp" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,178 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fcf9f4"
+    android:orientation="vertical"
+    tools:context="com.Alot.reminder.Register" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#931d4a" >
+
+        <TextView
+            android:id="@+id/wapsite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/hospitalCare"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#ffffff"
+            android:textStyle="bold|normal" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#006666" >
+
+        <TextView
+            android:id="@+id/forgot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/Registration"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#ffffff"
+            android:textStyle="bold|normal" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="650dp" >
+
+            <EditText
+                android:id="@+id/LASTNAME"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/FIRSTNAME"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="23dp"
+                android:background="@drawable/edittext"
+                android:ems="10"
+                android:hint="@string/last"
+                android:inputType="textPersonName"
+                android:paddingLeft="30dp" />
+
+            <EditText
+                android:id="@+id/FIRSTNAME"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/LASTNAME"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/edittext"
+                android:ems="10"
+                android:hint="@string/firstname"
+                android:inputType="textPersonName"
+                android:paddingLeft="30dp" />
+
+            <EditText
+                android:id="@+id/IDNUMBER"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/LASTNAME"
+                android:layout_below="@+id/LASTNAME"
+                android:layout_marginTop="31dp"
+                android:background="@drawable/edittext"
+                android:ems="10"
+                android:hint="@string/Id"
+                android:inputType="numberSigned|textPersonName"
+                android:paddingLeft="30dp" />
+
+            <EditText
+                android:id="@+id/PHONENUMBER"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/IDNUMBER"
+                android:layout_below="@+id/IDNUMBER"
+                android:layout_marginTop="31dp"
+                android:background="@drawable/edittext"
+                android:ems="10"
+                android:hint="@string/Phone"
+                android:inputType="phone"
+                android:paddingLeft="30dp" />
+
+            <EditText
+                android:id="@+id/TOWN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/PHONENUMBER"
+                android:layout_below="@+id/PHONENUMBER"
+                android:layout_marginTop="22dp"
+                android:background="@drawable/edittext"
+                android:ems="10"
+                android:hint="@string/town"
+                android:inputType="text"
+                android:paddingLeft="30dp" />
+
+            <EditText
+                android:id="@+id/VCTCLINIC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/TOWN"
+                android:layout_below="@+id/TOWN"
+                android:layout_marginTop="23dp"
+                android:background="@drawable/edittext"
+                android:ems="10"
+                android:hint="@string/VCT"
+                android:inputType="text"
+                android:paddingLeft="30dp" />
+
+            <EditText
+                android:id="@+id/USERNAME"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/VCTCLINIC"
+                android:layout_below="@+id/VCTCLINIC"
+                android:layout_marginTop="28dp"
+                android:background="@drawable/edittext"
+                android:ems="10"
+                android:hint="@string/username"
+                android:paddingLeft="30dp" />
+
+            <EditText
+                android:id="@+id/PASSWORD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/USERNAME"
+                android:layout_below="@+id/USERNAME"
+                android:layout_marginTop="21dp"
+                android:background="@drawable/edittext"
+                android:ems="10"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:paddingLeft="30dp" />
+
+            <EditText
+                android:id="@+id/CONFIRMPASSWORD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/PASSWORD"
+                android:layout_below="@+id/PASSWORD"
+                android:layout_marginTop="26dp"
+                android:background="@drawable/edittext"
+                android:ems="10"
+                android:hint="@string/confirm"
+                android:inputType="textPassword"
+                android:paddingLeft="30dp" />
+
+            <Button
+                android:id="@+id/SUBMIT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/CONFIRMPASSWORD"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/button"
+                android:text="@string/submit" />
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

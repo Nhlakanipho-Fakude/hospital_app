@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/circleId"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@null"
+        android:src="@drawable/circle" />
+
+    <TextView
+        android:id="@+id/HIGH"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/circleId"
+        android:text="@string/daysLe"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ff0000"
+        android:textStyle="bold|italic|normal" />
+
+    <TextView
+        android:id="@+id/wapsite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/circleId"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="14dp"
+        android:text="@string/hName"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#006666"
+        android:textStyle="bold|normal" />
+
+    <TextView
+        android:id="@+id/TITLE"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/wapsite"
+        android:layout_alignRight="@+id/circleId"
+        android:layout_marginRight="14dp"
+        android:text="@string/number"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold|normal" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/wapsite"
+        android:text="@string/time"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#6633cc" />
+
+</RelativeLayout>

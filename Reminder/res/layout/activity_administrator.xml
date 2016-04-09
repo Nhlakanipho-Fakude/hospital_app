@@ -1,0 +1,183 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.Alot.reminder.Administrator" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#931d4a" >
+
+        <TextView
+            android:id="@+id/wapsite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/admin"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#ffffff"
+            android:textStyle="bold|normal" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:contentDescription="@null"
+            android:src="@drawable/message" />
+
+        <TextView
+            android:id="@+id/needPills"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/imageView1"
+            android:paddingBottom="20dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#ff0000"
+            android:textStyle="bold|normal" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="444dp"
+            android:background="#ffffff" >
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#006666" >
+
+                <EditText
+                    android:id="@+id/searchBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@+id/Searching"
+                    android:background="@drawable/searchbox"
+                    android:ems="10"
+                    android:hint="@string/search"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="30sp" />
+
+                <Button
+                    android:id="@+id/Searching"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/search" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/fullName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignRight="@+id/set_ap"
+                android:layout_below="@+id/set_ap"
+                android:text="@string/set_App"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#006666"
+                android:textStyle="bold|normal" />
+
+            <TextView
+                android:id="@+id/idNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/c_pills"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/c_pills"
+                android:text="@string/collect"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#006666"
+                android:textStyle="bold|normal" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignRight="@+id/delete"
+                android:layout_below="@+id/delete"
+                android:text="@string/delete"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#006666"
+                android:textStyle="bold|normal" />
+
+            <ImageView
+                android:id="@+id/contact"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_above="@+id/textView3"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="18dp"
+                android:contentDescription="@null"
+                android:src="@drawable/profile" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView3"
+                android:layout_alignBottom="@+id/textView3"
+                android:layout_alignLeft="@+id/contact"
+                android:layout_alignParentRight="true"
+                android:text="@string/jsakdhf"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#006666"
+                android:textStyle="bold|normal" />
+
+            <ImageView
+                android:id="@+id/c_pills"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_above="@+id/fullName"
+                android:layout_alignLeft="@+id/contact"
+                android:contentDescription="@string/collect"
+                android:src="@drawable/pills" />
+
+            <Button
+                android:id="@+id/exit_admin"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/exit_admin" />
+
+            <ImageView
+                android:id="@+id/set_ap"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/relativeLayout1"
+                android:contentDescription="@string/set_App"
+                android:src="@drawable/make_appoint" />
+
+            <ImageView
+                android:id="@+id/delete"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/fullName"
+                android:layout_marginTop="17dp"
+                android:contentDescription="@string/delete"
+                android:src="@drawable/delete_user" />
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>
